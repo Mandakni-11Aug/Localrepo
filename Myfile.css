@@ -1,3 +1,159 @@
-p{
-  color:pink
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #0F172A, #F1F5F9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Left Panel */
+.left-panel {
+  background: #F1F5F9;
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-bg {
+  width: 70%;
+  opacity: 0.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info {
+  z-index: 1;
+  color: #0F172A;
+  font-size: 14px;
+  display: grid;
+  gap: 20px;
+}
+
+/* Right Panel */
+.right-panel {
+  background: #D9F4F5;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.top-logo h2 {
+  color: #0F172A;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.top-logo img {
+  width: 35px;
+  height: 35px;
+  filter: drop-shadow(0 0 5px #0E7C86);
+}
+
+.login-box h3 {
+  color: #0F172A;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  color: #0F172A;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #0F172A;
+  color: white;
+  font-size: 14px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+input::placeholder {
+  color: #D9F4F5;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #D9F4F5;
+  color: #0F172A;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0C4A60;
+  color: white;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #0F172A;
+}
+
+p a {
+  color: #0E7C86;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(99%) saturate(652%) hue-rotate(142deg) brightness(93%) contrast(92%);
+}
+ 
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(99%)
+          saturate(652%) hue-rotate(142deg) brightness(93%) contrast(92%);
 }
